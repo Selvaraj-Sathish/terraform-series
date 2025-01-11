@@ -37,7 +37,7 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
 
     ```
     provider "aws" {
-      region = "eu-west-1"
+      region = "ap-south-1"
     }
     ```
 
@@ -99,6 +99,6 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
 
 ## Congratulations on Completing the Exercise!
 
-Well done on successfully creating a basic infrastructure on AWS using Terraform. You've shown great understanding of Infrastructure as Code (IaC) and how to use Terraform to create and manage a VPC with subnets and Internet gateway on AWS. Keep up the good work and continue to expand your knowledge in this area. You're doing fantastic!
+
 
 
