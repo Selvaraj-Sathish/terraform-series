@@ -65,7 +65,7 @@ Associate the Route Table with the Public Subnet
 Navigate to the Subnet Associations tab of the route table.
 Click Edit Subnet Associations.
 Select the Public Subnet and click Save Associations.
-Congratulations on Completing the Exercise! í¾‰
+Congratulations on Completing the Exercise! ï¿½ï¿½ï¿½
 Youâ€™ve successfully:
 
 Created a VPC.
@@ -80,4 +80,4 @@ To take this infrastructure management process to the next level, you can automa
 
 Visit the detailed guide on how to set up this same infrastructure using Terraform on my GitHub repository: Terraform VPC Guide. Stay tuned for an upcoming video where I walk you through step-by-step!
 
-Switch from manual setup to automation today! íº€
+Switch from manual setup to automation today! ï¿½ï¿½ï¿½
