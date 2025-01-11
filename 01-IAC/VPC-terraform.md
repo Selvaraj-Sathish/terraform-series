@@ -16,7 +16,7 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
 
 ### Useful Resources
 
--   AWS Terraform Provider: [https://registry.terraform.io/providers/hashicorp/aws](https://registry.terraform.io/providers/hashicorp/aws)
+-   AWS Terraform Provider: [[[https://registry.terraform.io/providers/hashicorp/aws](https://registry.terraform.io/providers/hashicorp/aw](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)s)](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
 ## Step-by-Step Guide
 
