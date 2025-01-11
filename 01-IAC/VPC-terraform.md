@@ -16,8 +16,8 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
 
 ### Useful Resources
 
--   AWS Terraform Provider: [[[https://registry.terraform.io/providers/hashicorp/aws](https://registry.terraform.io/providers/hashicorp/aw](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)s)](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-
+-   AWS Terraform Provider: https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+  
 ## Step-by-Step Guide
 
 1. Begin by initializing your Terraform configuration with the `terraform` block. This block sets up the necessary details regarding the providers that will be used in your configuration. In this case, the AWS provider is required.
