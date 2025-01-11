@@ -4,15 +4,6 @@
 
 In this exercise, we will walk through the process of creating a basic infrastructure on AWS using Terraform, an open-source Infrastructure as Code (IaC) tool. Specifically, we'll create a Virtual Private Cloud (VPC) with two subnets, a public and a private one. We will also create an Internet gateway and a route table, which will be associated with our public subnet. This setup mimics a typical cloud infrastructure configuration, separating resources into public and private subnets for improved security and control.
 
-## Desired Outcome
-
-If you wish to give it a shot before looking into the detailed step-by-step and the solution videos, here is an overview of what the created solution should deploy:
-
-1. A VPC with a CIDR block of `192.168.0.0/16`.
-2. One public subnet with a CIDR block of `192.168.1.0/24`.
-3. One private subnet with a CIDR block of `192.168.2.0/24`.
-4. One Internet Gateway.
-5. One public route table with a route to the Internet Gateway, and the correct association between the public subnet and the public route table.
 
 ### Useful Resources
 
@@ -45,7 +36,7 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
 
     ```
     resource "aws_vpc" "demo_vpc" {
-      cidr_block = "192.168.0.0/16"
+      cidr_block = "10.0.0.0/16"
 
       tags = {
         Name = "Terraform VPC"
@@ -58,12 +49,12 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
     ```
     resource "aws_subnet" "public_subnet" {
       vpc_id     = aws_vpc.demo_vpc.id
-      cidr_block = "192.168.1.0/24"
+      cidr_block = "10.0.0.0/24"
     }
 
     resource "aws_subnet" "private_subnet" {
       vpc_id     = aws_vpc.demo_vpc.id
-      cidr_block = "192.168.2.0/24"
+      cidr_block = "10.0.0.1/24"
     }
     ```
 
