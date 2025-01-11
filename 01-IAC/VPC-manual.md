@@ -95,4 +95,4 @@ You will manually create the following resources:
 
 Congratulations! You've manually set up a VPC with public and private subnets, an Internet Gateway, and a public route table. This manual process provides valuable insights into AWS networking.
 
-**Next steps**: Explore automating such tasks with tools like Terraform or AWS CloudFormation for improved efficiency and consistency.
+**Next steps**: Explore automating such tasks with tools like Terraform for improved efficiency and consistency.  **Go to VPC-terraform.md**
