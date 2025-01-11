@@ -54,7 +54,7 @@ In this exercise, we will walk through the process of creating a basic infrastru
 
     resource "aws_subnet" "private_subnet" {
       vpc_id     = aws_vpc.demo_vpc.id
-      cidr_block = "10.0.0.1/24"
+      cidr_block = "10.0.1.0/24"
     }
     ```
 
