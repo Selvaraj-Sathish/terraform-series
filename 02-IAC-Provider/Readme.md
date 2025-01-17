@@ -42,6 +42,64 @@ resource "aws_s3_bucket" "us_east_bucket" {
   bucket   = "some-random-name-us-east"
   acl      = "private"    # Example ACL (optional)
 }
+ ```
+
+## Key Points
+
+### Default Provider Region
+- Resources default to the **first provider defined** (e.g., `ap-south-1`) unless explicitly specified using an alias.
+
+### Aliased Provider Usage
+- Use the `alias` attribute in the provider block to define additional providers.  
+  Example: `alias = "us-east"`.
+- Reference the aliased provider in resource blocks using:  
+  `provider = aws.us-east`.
+
+### Region Control
+- The `region` attribute in the resource block is **not necessary**.  
+- Regions are controlled by their respective **provider configurations**.
+
+---
+
+## How to Run
+
+1. **Clone or Download this Repository**  
+   If you don't have a repository set up yet:
+   - Create one with the provided Terraform code.
+   - Or simply download the relevant files.
+
+2. Follow your workflow for initializing and applying Terraform.
+
+---
+
+Use this guide to ensure proper region and provider handling in your Terraform configurations.
+
+
+## How to Run
+
+### 1. Clone or Download this Repository
+- If you don't have a repository set up yet:  
+  - Create one with the provided Terraform code.  
+  - Or simply download the relevant files.
+
+### 2. Initialize Your Terraform Working Directory
+- Open your terminal in the project directory and run the following command to initialize Terraform:
+
+```bash
+terraform init
+```
+
+### 3. Apply Your Terraform Plan
+- Once initialized, apply the Terraform plan to deploy your resources:
+```bash
+terraform apply
+```
+### 4. Review Changes and Confirm
+- Terraform will prompt you to confirm the changes before applying them.
+- Type yes to proceed.
+
+### Conclusion
+Using Terraform provider aliases is an efficient way to manage resources across multiple AWS regions. This approach is ideal for multi-region deployments and handling different region-based configurations in a single Terraform project.
 
 
 
