@@ -23,3 +23,37 @@ This project demonstrates hosting a static website on AWS S3 using Terraform. Th
 
 ---
 
+## Initialize Terraform: Run the following command to initialize Terraform:
+
+```
+terraform init
+```
+
+## Plan Resources: Preview the resources that Terraform will create:
+
+```
+terraform plan
+```
+
+## Deploy Resources: Apply the Terraform configuration to create the S3 bucket and deploy the website:
+
+```
+terraform apply
+```
+
+## Access the Website: Once the process is complete, Terraform will output the URL of your static website.
+
+
+## Clean-Up
+## To remove all created resources and avoid additional costs:
+
+```
+terraform destroy
+```
+
+## Connect with Me
+- LinkedIn: https://www.linkedin.com/in/sathish-selvaraj-263300288/
+- Telegram: https://t.me/+OL-k7JahT6JlZjg1
+- YouTube: https://www.youtube.com/channel/UCxYdms7I9NaaYYPxRIq9jQA
+
+## Feel free to connect, join the discussion, or subscribe for more tutorials and project updates! 😄
